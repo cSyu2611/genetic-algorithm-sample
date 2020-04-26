@@ -31,7 +31,7 @@ def change_generation(gcls_list, elite_list, children_list):
 def mutate_genes(gcls_list):
     mutated_gcls_list = []
     for i in gcls_list:
-        if params.INDIVISUAL_MUTATION > (random.randint(0,100)/Decimal(100)):
+        if params.INDIVIDUAL_MUTATION > (random.randint(0,100)/Decimal(100)):
             mutated_genes = []
             for j in i.get_genes():
                 if params.GENE_MUTATION > (random.randint(0,100)/Decimal(100)):
